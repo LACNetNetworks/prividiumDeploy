@@ -30,7 +30,6 @@ KEYCLOAK_CLIENT_ID=<your-keycloak-client-id>
 KEYCLOAK_CLIENT_SECRET=<your-keycloak-client-secret>
 KEYCLOAK_USERNAME=<your-keycloak-username>
 KEYCLOAK_PASSWORD=<your-keycloak-password>
-LNET_PRIVIDIUM_TEST_RPC_URL=<prividium-test-network-url>
 PRIVATE_KEY=<deployment-private-key>
 ```
 
@@ -60,7 +59,7 @@ The deployment script:
 ### Deploy using Hardhat
 
 ```bash
-npx hardhat run scripts/deployContract.js --network lnet_prividium_test
+node scripts/deployContract.js
 ```
 
 ## Networks
