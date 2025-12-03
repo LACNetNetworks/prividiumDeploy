@@ -1,13 +1,19 @@
-# Sample Hardhat Project
-
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
-
-Try running some of the following tasks:
+.env sample
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.js
+# RPC Node URL
+RPC_NODE_URL=https://proxy.testnet-lacnet.zksync.dev/rpc
+
+# Private Key (sin el prefijo 0x)
+USER_PRIVATE_KEY=user_private_key_here
+# address associated with the private key
+USER_ADDRESS=user_address_here
+
+KEYCLOACK_URL=https://keycloak-ppr.l-net.io/realms/ppr-realm/protocol/openid-connect/token
+KEYCLOAK_CLIENT_ID=backend_cli
+KEYCLOAK_USERNAME=user_here
+KEYCLOAK_PASSWORD=pass_here
+
+PRIVIDIUM_PERMISSION_SERVICE_URL=https://permissions-api.testnet-lacnet.zksync.dev/api/auth/login/oidc
+
 ```
